@@ -1,4 +1,5 @@
 import React from 'react';
+import { getInitials, getAvatarColor } from '../utils/helpers';
 
 // ─── Button ─────────────────────────────────────────────────
 export const Button = ({
@@ -225,7 +226,6 @@ export const EmptyState = ({ icon = '◎', title, message, action }) => (
 );
 
 // ─── Avatar ──────────────────────────────────────────────────
-import { getInitials, getAvatarColor } from '../utils/helpers';
 
 export const Avatar = ({ name = '', size = 32 }) => (
   <div style={{
